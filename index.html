@@ -1,7 +1,7 @@
 <html> 
 <head>
 <title>WOW 成就-冰冷黑暗的爪牙</title>
-<meta name="description" content="魔獸世界9.1 冰冷黑暗的爪牙倒數計時" />
+<meta name="description" content="魔兽世界9.1 冰冷黑暗的爪牙倒数计时" />
 <link rel="icon" type="image/png" sizes="70x07" href="images/inv_mawguardhandmountwhite_70.png">
 <link rel="apple-touch-icon" sizes="180x180" href="images/inv_mawguardhandmountwhite_180.png">
 <meta name="msapplication-TileColor" content="#2e2e2e">
@@ -156,8 +156,8 @@
     var firstDate = new Date(firstStr);
     var tableList = 13;
     var thisDate = testDate !== '' ? new Date(testDate) : new Date();
-    var eachTime = 2;//每隔2小時
-    var eventarray=['葛爾包亞','群魂重擔','痛苦化身','詛咒的維西亞','剝皮者祖加斯','巨怪戈馬克','哨兵派洛夫斯','吞魂者穆格姆','『哨兵』卡吉亞','普羅馬提茲','哨兵沙科吉斯','仲裁者拉扎剌','古魯庫亞長老','作祟者埃捷爾','錘骨葛拉奇'];
+    var eachTime = 2;//每隔2小时
+    var eventarray=['格拉勒波','众魂之集','痛苦具象','受诅者菲赛雅','掠夺者祖尔迦兹','巨怪高尔马克','哨兵派洛法斯','噬魂者穆格雷姆','哨兵卡兹基','普罗玛修兹','哨兵夏寇泽斯','调解者莱兹拉','长者格鲁库艾克','萦绕者阿尔焦','锤骨者格拉吉兹'];
     var hours = Math.abs(thisDate - firstDate) / 36e5;
 
     var thistimes = parseInt((parseInt(hours) / eachTime));
@@ -190,7 +190,7 @@
 
                 var nowindex = arrayindex > (eventarray.length - 1) ? parseInt(thistimes % eventarray.length) : arrayindex;
                 var nextindex = (nowindex + 1)  > (eventarray.length - 1) ? ((nowindex + 1) % eventarray.length) : nowindex + 1;
-                b_strTime = spantime2 < 0 ? '已結束' : b_strTime;
+                b_strTime = spantime2 < 0 ? '已结束' : b_strTime;
 
                 $('#place').html(eventarray[nowindex]);
                 $('#times').html(b_strTime);
@@ -381,23 +381,23 @@
 </script>
 
     <h1 class="title" id="title">成就-冰冷黑暗的爪牙</h1>
-    <!-- <div class="text note">ps: 剛改版人潮眾多，通常開場後5分鐘內事件即結束</div> -->
+    <!-- <div class="text note">ps: 刚改版人潮众多，通常开场后5分钟内事件即结束</div> -->
     <div class="text" >目前在:<label id="place" style="color:#FFEB3B"> </label></div>
     <div class="text texttime" id="times">00:00:00</div>
     <div class="text" >下一次:<label id="NEXTplace" style="color:#FFEB3B"> </label></div>
     <div class="text textdate" id="NEXTDates"></div>
     <div class="text texttime" id="NEXTtimes">00:00:00</div>
-    <div class="text note Whitefont">ps: 經社群反饋，某些王會蹺班或代班，推測是偶發事件，整體順序並不會大異動</div>
+    <div class="text note Whitefont">ps: 经社群反馈，某些首领会跷班或代班，推测是偶发事件，整体顺序并不会大异动</div>
     <div class="table" id="nexttable"></div>
     <div class="setting" id="setting">
-    	 <h1 class="title" id="title">設定</h1>
+    	 <h1 class="title" id="title">设定</h1>
     	 <div id="setting-panel"></div>
     	 <div class="setting-panel-function">
-    	 	<button class="setting-panel-function-btn" onclick="setCheck2Cookie();loadSetting();">確定</button>
+    	 	<button class="setting-panel-function-btn" onclick="setCheck2Cookie();loadSetting();">确定</button>
     	 	<button class="setting-panel-function-btn" onclick="clearSetting()">清除</button>
-    	 	<button class="setting-panel-function-btn" onclick="loadSetting()">關閉</button>
+    	 	<button class="setting-panel-function-btn" onclick="loadSetting()">关闭</button>
     	 </div>
     </div>
-    <footer><a href="javascript:toggleSetting()">2021</a> Designed By 馬神-冰霜之刺</footer>
+    <footer><a href="javascript:toggleSetting()">2021</a> Designed By 马神-冰霜之刺</footer>
 </body> 
 </html>
