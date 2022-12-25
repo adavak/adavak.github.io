@@ -270,7 +270,7 @@
         var placeindex = thistimes + 2;
 
         for (var i = 1; i <= count; i++) {
-            var times = (placeindex)  * 2;
+            var times = (placeindex)  * 75;
             var startdates = new Date(new Date(firstStr).setHours(new Date(firstStr).getHours() + (times)));
  
             var index = placeindex > (eventarray.length - 1 ) ? parseInt(placeindex % eventarray.length )  : placeindex;
