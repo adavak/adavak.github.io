@@ -161,10 +161,10 @@
     var hours = Math.abs(thisDate - firstDate) / 36e5;
 
     var thistimes = parseInt((parseInt(hours) / eachTime));
-    var thistimeDate = new Date(new Date(firstStr).setHours(new Date(firstStr).getHours() + (thistimes * 2)));
+    var thistimeDate = new Date(new Date(firstStr).setHours(new Date(firstStr).getHours() + (thistimes * 75)));
 
 	var nexttimes = thistimes + 1;
-    var nextDate = new Date(new Date(firstStr).setHours(new Date(firstStr).getHours() + (nexttimes * 2)));
+    var nextDate = new Date(new Date(firstStr).setHours(new Date(firstStr).getHours() + (nexttimes * 75)));
 
     var arrayindex = parseInt(thistimes % eventarray.length);
     var spantime = (nextDate - thisDate) / 1000;
@@ -230,7 +230,7 @@
         spantime2 = 2 * 60 * 60;
         arrayindex = arrayindex > (eventarray.length - 1) ? 0 : arrayindex + 1;
         thistimes = arrayindex;
-        nextDate = new Date(new Date(firstStr).setHours(new Date(firstStr).getHours() + ((thistimes + 1) * 2)));
+        nextDate = new Date(new Date(firstStr).setHours(new Date(firstStr).getHours() + ((thistimes + 1) * 75)));
         getNextTable(tableList);
     }
 
